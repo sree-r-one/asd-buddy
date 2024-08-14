@@ -1,5 +1,43 @@
 import React from "react";
-import { logo } from "../assets";
+import { logo, logoASDBuddy } from "../assets";
+
+const links = [
+  {
+    name: "home",
+    displayText: "Home",
+    path: "/",
+  },
+  {
+    name: "courses",
+    displayText: "Courses",
+    path: "/courses",
+  },
+  {
+    name: "freedom",
+    displayText: "Freedom",
+    path: "/freedom",
+  },
+  {
+    name: "blog",
+    displayText: "Blog",
+    path: "/blog",
+  },
+  {
+    name: "community",
+    displayText: "Community",
+    path: "/community",
+  },
+  {
+    name: "book",
+    displayText: "Book",
+    path: "/book",
+  },
+  {
+    name: "faq",
+    displayText: "FAQ",
+    path: "/faq",
+  },
+];
 
 const Navbar = () => {
   return (
@@ -8,12 +46,17 @@ const Navbar = () => {
       <div className="flex items-center justify-between">
         {/* Logo */}
         <div className="pt-2">
-          <img src={logo} alt="" />
+          <img src={logoASDBuddy} alt="" className="h-12" />
         </div>
 
         {/* Menu items  */}
-        <div className="md:flex hidden items-center justify-center space-x-6">
-          <a href="# " className="hover:text-darkGrayishBlue">
+        <div className="hidden items-center justify-center space-x-6 md:flex">
+          {links.map((link, i) => (
+            <a href="#" key={i} className="hover:text-darkGrayishBlue">
+              {link.displayText}
+            </a>
+          ))}
+          {/* <a href="# " className="hover:text-darkGrayishBlue">
             Pricing
           </a>
           <a href="#" className="hover:text-darkGrayishBlue">
@@ -30,20 +73,20 @@ const Navbar = () => {
           </a>
           <a href="#" className="hover:text-darkGrayishBlue">
             Pricing
-          </a>
+          </a> */}
           {/* Button */}
           <a
             href="#"
-            className="bg-brightRed hover:bg-brightRedLight rounded-full px-6 py-2 text-white"
+            className="bg-buddyBlue hover:bg-buddyBlueLight rounded-full px-6 py-2 text-white"
           >
-            Chat
+            login
           </a>
         </div>
 
         {/* Hamburger Icon */}
         <button
           id="menu-btn"
-          className="hamburger md:hidden block focus:outline-none"
+          className="hamburger block focus:outline-none md:hidden"
         >
           <span className="hamburger-top"></span>
           <span className="hamburger-middle"></span>

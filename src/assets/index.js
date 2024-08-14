@@ -1,6 +1,7 @@
 export { default as logo } from "../assets/logo.svg";
 export { default as logoWhite } from "../assets/logo-white.svg";
 export { default as illustrationIntro } from "../assets/illustration-intro.svg";
+export { default as heroImg } from "../assets/heroImg.jpg";
 export { default as avatarAnisha } from "../assets/avatar-anisha.png";
 export { default as avatarRichard } from "../assets/avatar-richard.png";
 export { default as avatarShanai } from "../assets/avatar-shanai.png";
@@ -10,3 +11,4 @@ export { default as iconInstagram } from "../assets/icon-instagram.svg";
 export { default as iconPinterest } from "../assets/icon-pinterest.svg";
 export { default as iconTwitter } from "../assets/icon-twitter.svg";
 export { default as iconYoutube } from "../assets/icon-youtube.svg";
+export { default as logoASDBuddy } from "../assets/asd-buddy-logo.png";

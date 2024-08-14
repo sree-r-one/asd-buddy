@@ -10,6 +10,9 @@ export default {
     },
     extend: {
       colors: {
+        buddyBlue: "hsl(204, 100%, 47%)",
+        buddyBlueLight: "hsl(204, 100%, 67%)",
+        buddyBlueSupLight: "hsl(204, 100%, 87%)",
         brightRed: "hsl(12, 88%, 59%)",
         brightRedLight: "hsl(12, 88%, 69%)",
         brightRedSupLight: "hsl(12, 88%, 95%)",

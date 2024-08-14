@@ -2,28 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    background-image: url('assets/bg-tablet-pattern.svg');
-    background-repeat: repeat;
-    background-size: 800px;
-    background-position: 90% -25%;
-    background-position: 0%;
+body {
+  background-image: url("assets/pattern.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position: 0%;
 }
 
-#cta{
-    background-image: url('assets/bg-simplify-section-desktop.svg');
+#cta {
+  background-image: url("assets/bg-simplify-section-desktop.svg");
 }
 
-@media(max-width:576px){
-    body{
-        background-position: 50px -50px;
-        background-size: 500px;
-    }
-    #cta{
-    background-image: url('assets/bg-simplify-section-mobile.svg');
+@media (max-width: 576px) {
+  body {
+    background-position: 50px -50px;
+    background-size: 500px;
+  }
+  #cta {
+    background-image: url("assets/bg-simplify-section-mobile.svg");
     background-repeat: no-repeat;
-
-}
+  }
 }
 /* Hamburger Menu */
 .hamburger {
