@@ -30,13 +30,6 @@ const Footer = () => {
             © 2022 Preline.
           </p>
         </div>
-
-        <button
-          onClick={toggleDarkMode}
-          className="rounded-lg border bg-white px-4 py-2 text-gray-800 shadow-sm hover:bg-gray-50 focus:bg-gray-50 focus:outline-none dark:border-neutral-700 dark:bg-neutral-900 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
-        >
-          {isDarkMode ? "Light Mode" : "Dark Mode"}
-        </button>
       </div>
 
       <div className="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-5">
