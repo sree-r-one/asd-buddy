@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const Hero = () => {
   return (
-    <div className="mx-auto my-10 max-w-[85rem] px-4 sm:px-6 lg:px-8">
+    <div className="mx-auto my-10 px-4 sm:px-6 lg:px-8">
+      {/* <Features /> */}
       {/* Grid */}
       <div className="grid gap-4 md:grid-cols-2 md:items-center md:gap-8 xl:gap-20">
         <div>
