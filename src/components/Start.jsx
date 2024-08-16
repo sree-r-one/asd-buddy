@@ -137,7 +137,7 @@ const Start = () => {
       </div>
 
       {/* Grid */}
-      <div className="mt-5 grid gap-8 lg:mt-16 lg:grid-cols-3 lg:gap-12">
+      <div className="container mx-auto mt-20 grid items-center justify-center gap-8 lg:mt-16 lg:grid-cols-3 lg:gap-12">
         <div className="lg:col-span-1">
           <h2 className="text-3xl font-bold text-gray-800 dark:text-white md:text-3xl">
             Take Charge of Your Future
