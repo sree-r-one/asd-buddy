@@ -24,9 +24,9 @@ const Footer = () => {
             href="#"
             aria-label="Brand"
           >
-            Brand
+            ASDBuddy
           </a>
-          <p className="mt-3 text-xs text-gray-600 sm:text-sm dark:text-neutral-400">
+          <p className="mt-3 text-xs text-gray-600 dark:text-neutral-400 sm:text-sm">
             © 2022 Preline.
           </p>
         </div>
@@ -53,16 +53,14 @@ const Footer = () => {
 
         <div>
           <h4 className="text-xs font-semibold uppercase text-gray-900 dark:text-neutral-100">
-            Company
+            Courses
           </h4>
           <div className="mt-3 space-y-3 text-sm">
             {[
-              { name: "About us", extra: "" },
-              { name: "Blog", extra: "" },
-              { name: "Careers", extra: "— We're hiring" },
-              { name: "Customers", extra: "" },
-              { name: "Newsroom", extra: "" },
-              { name: "Sitemap", extra: "" },
+              { name: "Freedom Courses ENG", extra: "" },
+              { name: "Free Courses", extra: "" },
+              { name: "Freedom Courses HIN", extra: "" },
+              { name: "Essential", extra: "" },
             ].map((item) => (
               <p key={item.name}>
                 <a
@@ -197,7 +195,7 @@ const Footer = () => {
               >
                 Brand
               </a>
-              <p className="mt-1 text-xs text-gray-600 sm:text-sm dark:text-neutral-400">
+              <p className="mt-1 text-xs text-gray-600 dark:text-neutral-400 sm:text-sm">
                 © 2022 Preline.
               </p>
             </div>
