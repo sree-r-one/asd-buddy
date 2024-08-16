@@ -98,7 +98,7 @@ const DESCRIPTIONS = [
 
 const Description = ({ svg, heading, description }) => {
   return (
-    <div className="flex gap-x-5">
+    <div className="flex gap-x-5 rounded-lg bg-transparent px-8 py-4 shadow-sm shadow-buddyBlueLight transition-all hover:shadow-lg">
       {svg}
       <div className="grow">
         <h3 className="text-lg font-semibold text-gray-800 dark:text-white">

@@ -1,8 +1,8 @@
 import Navbar from "./Navbar";
 import Hero from "./Hero";
-import Features from "./Features";
 import Testimonials from "./Testimonials";
 import CTA from "./CTA";
 import Footer from "./Footer";
 import Start from "./Start";
-export { Navbar, Hero, Features, Testimonials, CTA, Footer, Start };
+import Pricing from "./Pricing";
+export { Navbar, Hero, Testimonials, CTA, Footer, Start, Pricing };

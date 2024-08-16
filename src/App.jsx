@@ -2,11 +2,11 @@ import React from "react";
 import {
   Navbar,
   Hero,
-  Features,
   Testimonials,
   CTA,
   Footer,
   Start,
+  Pricing,
 } from "./components";
 import "./App.css";
 
@@ -15,7 +15,7 @@ const App = () => {
     <div>
       <Navbar />
       <Start />
-      <Features />
+      <Pricing />
       <Hero />
       <div className="mx-auto space-y-12"></div>
       <Testimonials />
