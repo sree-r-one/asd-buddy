@@ -30,7 +30,7 @@ const Navbar = () => {
 
   return (
     <nav className="border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-900">
-      <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-center justify-between p-4">
+      <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
         <img src={logoASDBuddy} className="h-12" />
         <button
           onClick={toggleNav}
