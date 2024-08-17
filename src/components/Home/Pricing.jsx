@@ -66,7 +66,7 @@ const PricingCard = ({ item }) => {
 };
 const Pricing = () => {
   return (
-    <div id="pricing" className="container mx-auto mt-48 py-16">
+    <div id="pricing" className="container mx-auto py-16">
       <div className="text-center">
         <h2 className="text-3xl font-thin text-gray-900 sm:text-6xl">
           Providing you value and paying our employees!

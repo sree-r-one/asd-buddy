@@ -10,10 +10,9 @@ import {
 
 const Home = () => {
   return (
-    <div>
+    <div className="space-y-24">
       <Start />
       <Pricing />
-      <Hero />
       <Testimonials />
       <CTA />
       <Footer />

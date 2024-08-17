@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { logoASDBuddy } from "../assets";
+
 const Navbar = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [isNavOpen, setNavOpen] = useState(false);
@@ -71,6 +72,39 @@ const Navbar = () => {
                 Home
               </a>
             </li>
+
+            <li>
+              <a
+                href="#"
+                className="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+              >
+                Services
+              </a>
+            </li>
+            <li>
+              <a
+                onClick={() => scrollToSection("pricing")}
+                className="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+              >
+                Pricing
+              </a>
+            </li>
+            <li>
+              <a
+                onClick={() => scrollToSection("testimonials")}
+                className="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+              >
+                Testimonials
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+              >
+                Contact
+              </a>
+            </li>
             <li className="relative">
               <button
                 onClick={toggleDropdown}
@@ -119,8 +153,9 @@ const Navbar = () => {
                       <a
                         href="#"
                         className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        onClick={() => scrollToSection("testimonials")}
                       >
-                        Earnings
+                        Testimonials
                       </a>
                     </li>
                   </ul>
@@ -134,30 +169,6 @@ const Navbar = () => {
                   </div>
                 </div>
               )}
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
-              >
-                Services
-              </a>
-            </li>
-            <li>
-              <a
-                onClick={() => scrollToSection("pricing")}
-                className="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
-              >
-                Pricing
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
-              >
-                Contact
-              </a>
             </li>
           </ul>
         </div>
