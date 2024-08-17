@@ -53,7 +53,7 @@ const PricingCard = ({ item }) => {
 
       <ul className="mt-6 space-y-4 text-gray-600">
         {item.items.map((description, i) => (
-          <li className="flex">
+          <li className="flex" key={i}>
             ✔️ <div className="pl-2">{description}</div>{" "}
           </li>
         ))}

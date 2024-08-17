@@ -1,27 +1,17 @@
 import React from "react";
-import {
-  Navbar,
-  Hero,
-  Testimonials,
-  CTA,
-  Footer,
-  Start,
-  Pricing,
-} from "./components";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Navbar } from "./components";
 import "./App.css";
+import { Home } from "./Pages";
 
 const App = () => {
   return (
-    <div>
+    <Router>
       <Navbar />
-      <Start />
-      <Pricing />
-      <Hero />
-      <div className="mx-auto space-y-12"></div>
-      <Testimonials />
-      <CTA />
-      <Footer />
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
   );
 };
 
