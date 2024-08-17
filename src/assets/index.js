@@ -12,3 +12,5 @@ export { default as iconPinterest } from "../assets/icon-pinterest.svg";
 export { default as iconTwitter } from "../assets/icon-twitter.svg";
 export { default as iconYoutube } from "../assets/icon-youtube.svg";
 export { default as logoASDBuddy } from "../assets/asd-buddy-logo.png";
+export { default as logoAppleStore } from "../assets/appleStore.png";
+export { default as logoGoogleStore } from "../assets/googleStore.png";
