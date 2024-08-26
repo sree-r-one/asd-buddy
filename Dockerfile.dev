@@ -1,10 +1,13 @@
 # Use the official Node.js image with a specific version
 FROM node:20-alpine
 
-# Set the working directory inside the container
-WORKDIR /app 
+# Install necessary build tools for native modules (if needed)
+RUN apk add --no-cache python3 make g++ bash
 
-# Copy the package.json and package-lock.json (if available) to the container
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy only the package.json and package-lock.json to the container to leverage Docker caching
 COPY package.json package-lock.json ./
 
 # Install dependencies
@@ -16,5 +19,5 @@ COPY . .
 # Expose the port the app runs on
 EXPOSE 3000
 
-# Command to run the app in development mode
+# Command to run the app in development mode with hot-reloading
 CMD ["npm", "run", "dev"]

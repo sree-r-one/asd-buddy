@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev  # Ensure this Dockerfile is tailored for the frontend
+    container_name: asdbuddy-dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - node_modules_frontend:/app/node_modules  # Named volume for frontend node_modules
+    env_file:
+      - .env.development
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
