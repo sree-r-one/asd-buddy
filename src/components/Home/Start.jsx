@@ -153,7 +153,7 @@ const Start = () => {
         {/* End Col */}
 
         <div className="lg:col-span-2">
-          <div className="grid gap-8 sm:grid-cols-2 md:gap-12">
+          <div className="grid gap-8 sm:grid-cols-1 md:gap-12">
             {DESCRIPTIONS.map((item, i) => (
               <Description
                 key={i}

@@ -14,8 +14,12 @@ const CTA = () => {
             Together, we can unlock the potential within every child.
           </p>
           <div className="flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-            <img src={logoAppleStore} alt="applestore" className="h-16" />
-            <img src={logoGoogleStore} alt="applestore" className="h-16" />
+            <div className="">
+              <img src={logoAppleStore} alt="applestore" className="h-16" />
+            </div>
+            <div className="">
+              <img src={logoGoogleStore} alt="applestore" className="h-16" />
+            </div>
           </div>
         </div>
       </div>

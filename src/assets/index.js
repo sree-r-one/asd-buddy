@@ -14,3 +14,4 @@ export { default as iconYoutube } from "../assets/icon-youtube.svg";
 export { default as logoASDBuddy } from "../assets/asd-buddy-logo.png";
 export { default as logoAppleStore } from "../assets/appleStore.png";
 export { default as logoGoogleStore } from "../assets/googleStore.png";
+export { default as videoHero } from "../assets/kidLaughing.mp4";
